@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Production builds
+build/
+dist/
+coverage/
+
+# Tauri & Rust build artifacts
+src-tauri/target/
+
+# OS / System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment variables (Never commit real secrets)
+.env
+.env.local
+.env.*.local
+!.env.example

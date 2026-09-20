@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="overflow-x-hidden w-full max-w-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Bookmark Launcher - Personal Web App & Desktop Launcher</title>
+    <meta name="description" content="A fast, responsive desktop launcher for all your favorite websites with instant search and 1-click launch." />
+    
+    <!-- PWA Manifest & Browser Title Bar Install Settings -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#4F46E5" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Launcher" />
+    <link rel="apple-touch-icon" href="/icon-192.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/icon-192.svg" />
+  </head>
+  <body class="bg-[#FAF8F5] dark:bg-[#121212] text-slate-900 antialiased selection:bg-indigo-600 selection:text-white font-['Inter',sans-serif] overflow-x-hidden w-full max-w-full min-h-screen">
+    <div id="root" class="w-full max-w-full overflow-x-hidden min-h-screen flex flex-col"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('SW registration note:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

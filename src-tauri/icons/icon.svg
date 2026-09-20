@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#4338CA" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="rocketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Container with Offset Shadow -->
+  <rect x="56" y="56" width="416" height="416" rx="96" fill="#0F172A" />
+  <rect x="40" y="40" width="416" height="416" rx="96" fill="url(#bgGrad)" stroke="#0F172A" stroke-width="16" />
+
+  <!-- Dynamic Bookmark Ribbon -->
+  <path d="M160 80 H352 C368 80 380 92 380 108 V432 L256 340 L132 432 V108 C132 92 144 80 160 80 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="16" stroke-linejoin="round" />
+  <path d="M256 340 L380 432 V108 C380 92 368 80 352 80 H256 V340 Z" fill="#F1F5F9" />
+
+  <!-- Rocket Ship inside Bookmark -->
+  <g transform="translate(160, 110)">
+    <!-- Rocket Jet Flame -->
+    <path d="M76 170 L96 225 L116 170 Z" fill="#F43F5E" stroke="#0F172A" stroke-width="8" stroke-linejoin="round" />
+    <path d="M84 170 L96 205 L108 170 Z" fill="#FBBF24" />
+
+    <!-- Rocket Body -->
+    <path d="M96 20 C96 20 145 50 145 125 C145 155 130 170 110 180 L96 170 L82 180 C62 170 47 155 47 125 C47 50 96 20 96 20 Z" fill="#4F46E5" stroke="#0F172A" stroke-width="10" stroke-linejoin="round" />
+    
+    <!-- Wings -->
+    <path d="M47 125 L15 160 L52 155 Z" fill="#38BDF8" stroke="#0F172A" stroke-width="8" stroke-linejoin="round" />
+    <path d="M145 125 L177 160 L140 155 Z" fill="#38BDF8" stroke="#0F172A" stroke-width="8" stroke-linejoin="round" />
+
+    <!-- Porthole Window -->
+    <circle cx="96" cy="95" r="28" fill="#FFFFFF" stroke="#0F172A" stroke-width="8" />
+    <circle cx="96" cy="95" r="18" fill="url(#rocketGrad)" />
+  </g>
+</svg>

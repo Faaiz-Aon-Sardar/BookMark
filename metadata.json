@@ -1,0 +1,9 @@
+{
+  "name": "Bookmark Launcher",
+  "description": "A playful, bold personal desktop launcher for all your favorite websites with instant search and custom cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+
